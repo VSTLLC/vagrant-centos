@@ -1,3 +1,8 @@
+VST
+==============
+
+This is currently a trivial fork of https://github.com/astrostl/vagrant-centos. It's public just to make it easier to download the box image. Do not put anything sensitive in this box image! Provision it from a private repo instead.
+
 vagrant-centos
 ==============
 
