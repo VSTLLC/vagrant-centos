@@ -2,13 +2,13 @@
 (( $# < 1 )) && { echo "usage: $0 majorversion [minorversion]"; exit 1; }
 
 if [[ $2 ]]; then
-  vc_osiso="${HOME}/Downloads/CentOS-${1}.${2}-x86_64-minimal.iso"
+  vc_osiso="${HOME}/Downloads/CentOS-${1}.${2}-x86_64-minimal.iso" # 6.7 sha256sum 9d3fec5897be6b3fed4d3dda80b8fa7bb62c616bbfd4bdcd27295ca9b764f498
   vc_basebox="vagrant-centos-${1}-${2}"
 else
   vc_osiso="${HOME}/Downloads/CentOS-${1}-x86_64-Minimal.iso"
   vc_basebox="vagrant-centos-${1}"
 fi
-vc_guestiso='/Applications/VirtualBox.app/Contents/MacOS/VBoxGuestAdditions.iso'
+vc_guestiso="${HOME}/Downloads/VBoxGuestAdditions_5.0.12.iso" # sha256sum 61a19c9ec4b449cbc6bb41b636b03a16bf5a47ffa4943423d262863017e8bc9b
 vc_vboxbase="${HOME}/VirtualBox VMs"
 vc_basebox="vagrant-centos-${1}"
 vc_hddbase="${vc_vboxbase}/${vc_basebox}/${vc_basebox}"
